@@ -1,0 +1,9 @@
+Django==4.2
+djangorestframework
+djangorestframework-simplejwt
+drf-yasg
+channels
+gunicorn
+psycopg2-binary
+stripe
+python-socketio

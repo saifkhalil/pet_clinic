@@ -1,0 +1,12 @@
+name: 'pet_clinic'
+services:
+  web:
+    build: .
+    command: >
+      sh -c "python manage.py makemigrations &&
+             python manage.py migrate &&
+             python manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - .:/pet_clinic_data
+    ports:
+      - "8000:8000"
