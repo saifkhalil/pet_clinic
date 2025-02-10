@@ -17,6 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+# Customize Django Admin site headers and title
+admin.site.site_header = "Pet Clinic Administration"
+admin.site.site_title = "Pet Clinic Admin Portal"
+admin.site.index_title = "Welcome to Pet Clinic Admin Panel"
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('ecommerce.urls')),
